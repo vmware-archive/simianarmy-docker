@@ -27,11 +27,11 @@ RUN chmod 0755 /usr/local/simianarmy/entrypoint.sh
 
 ENV AWS_REGION "eu-west-1"
 ENV AWS_ACCESS_KEY_ID ""
-ENV AWS_SECRET_ACCESS_KEY = ""
-ENV CHAOS_LEASHED = true
-ENV JANITOR_LEASHED = true
-ENV VOLUME_TAGGING_LEASHED = true
-ENV CONFORMITY_LEASHED = true
+ENV AWS_SECRET_ACCESS_KEY ""
+ENV CHAOS_LEASHED true
+ENV JANITOR_LEASHED true
+ENV VOLUME_TAGGING_LEASHED true
+ENV CONFORMITY_LEASHED true
 
 ENTRYPOINT ["/usr/local/simianarmy/entrypoint.sh"]
 CMD ["catalina.sh", "run"]
