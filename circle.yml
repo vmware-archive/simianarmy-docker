@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - ./build/build-image.sh
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - ./build/publish-image.sh
