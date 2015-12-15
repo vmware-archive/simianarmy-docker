@@ -25,6 +25,7 @@ WORKDIR /usr/local/simianarmy
 COPY entrypoint.sh /usr/local/simianarmy/entrypoint.sh
 RUN chmod 0755 /usr/local/simianarmy/entrypoint.sh 
 
+# Set these to override values in the config files at startup time
 ENV AWS_REGION "eu-west-1"
 ENV AWS_ACCESS_KEY_ID ""
 ENV AWS_SECRET_ACCESS_KEY ""
